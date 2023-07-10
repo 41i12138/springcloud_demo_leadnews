@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>freemarker-demo</module>
+        <module>tess4j-demo</module>
     </modules>
 
     <properties>
