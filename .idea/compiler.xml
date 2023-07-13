@@ -15,6 +15,8 @@
         <module name="heima-leadnews-feign-api" />
         <module name="heima-leadnews-user" />
         <module name="heima-leadnews-article" />
+        <module name="kafka-demo" />
+        <module name="es-init" />
         <module name="heima-leadnews-schedule" />
         <module name="heima-leadnews-utils" />
         <module name="heima-leadnews-app-gateway" />
@@ -23,6 +25,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="es-init" target="1.8" />
       <module name="freemarker-demo" target="1.8" />
       <module name="heima-file-starter" target="1.8" />
       <module name="heima-leadnews" target="1.8" />
@@ -41,11 +44,13 @@
       <module name="heima-leadnews-utils" target="1.8" />
       <module name="heima-leadnews-wemedia" target="1.8" />
       <module name="heima-leadnews-wemedia-gateway" target="1.8" />
+      <module name="kafka-demo" target="1.8" />
       <module name="tess4j-demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="es-init" options="-parameters" />
       <module name="freemarker-demo" options="-parameters" />
       <module name="heima-file-starter" options="-parameters" />
       <module name="heima-leadnews-apis" options="-parameters" />
@@ -62,6 +67,7 @@
       <module name="heima-leadnews-utils" options="-parameters" />
       <module name="heima-leadnews-wemedia" options="-parameters" />
       <module name="heima-leadnews-wemedia-gateway" options="-parameters" />
+      <module name="kafka-demo" options="-parameters" />
       <module name="tess4j-demo" options="-parameters" />
     </option>
   </component>

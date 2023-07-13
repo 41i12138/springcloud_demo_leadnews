@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/heima-leadnews-test/es-init/es-init.iml" filepath="$PROJECT_DIR$/heima-leadnews-test/es-init/es-init.iml" />
       <module fileurl="file://$PROJECT_DIR$/heima-leadnews-test/freemarker-demo/freemarker-demo.iml" filepath="$PROJECT_DIR$/heima-leadnews-test/freemarker-demo/freemarker-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/heima-leadnews-basic/heima-file-starter/heima-file-starter.iml" filepath="$PROJECT_DIR$/heima-leadnews-basic/heima-file-starter/heima-file-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/heima-leadnews.iml" filepath="$PROJECT_DIR$/heima-leadnews.iml" />
@@ -19,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/heima-leadnews-utils/heima-leadnews-utils.iml" filepath="$PROJECT_DIR$/heima-leadnews-utils/heima-leadnews-utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-wemedia/heima-leadnews-wemedia.iml" filepath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-wemedia/heima-leadnews-wemedia.iml" />
       <module fileurl="file://$PROJECT_DIR$/heima-leadnews-gateway/heima-leadnews-wemedia-gateway/heima-leadnews-wemedia-gateway.iml" filepath="$PROJECT_DIR$/heima-leadnews-gateway/heima-leadnews-wemedia-gateway/heima-leadnews-wemedia-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/heima-leadnews-test/kafka-demo/kafka-demo.iml" filepath="$PROJECT_DIR$/heima-leadnews-test/kafka-demo/kafka-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/heima-leadnews-test/tess4j-demo/tess4j-demo.iml" filepath="$PROJECT_DIR$/heima-leadnews-test/tess4j-demo/tess4j-demo.iml" />
     </modules>
   </component>
