@@ -151,6 +151,9 @@ public class WmNewsServiceImpl extends ServiceImpl<WmNewsMapper, WmNews> impleme
 
         //5.审核文章
 //        wmNewsAutoScanService.autoScanWmNews(wmNews.getId());
+        if (wmNews.getPublishTime() == null) {
+            wmNews.setPublishTime(new Date());
+        }
         wmNewsTaskService.addNewsToTask(wmNews.getId(), wmNews.getPublishTime());
 
         return ResponseResult.okResult(AppHttpCodeEnum.SUCCESS);
