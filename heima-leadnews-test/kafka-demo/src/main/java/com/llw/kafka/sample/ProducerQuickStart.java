@@ -26,23 +26,28 @@ public class ProducerQuickStart {
         //2.生产者对象
         KafkaProducer<String, String> producer = new KafkaProducer<String, String>(properties);
 
-        //封装发送的消息
-        ProducerRecord<String, String> record = new ProducerRecord<String, String>("leadnews-topic", "100001", "hello kafka");
+//        //封装发送的消息
+//        ProducerRecord<String, String> record = new ProducerRecord<String, String>("leadnews-topic", "100001", "hello kafka");
+//
+//        //3.发送消息
+//        producer.send(record);
+//
+//        ProducerRecord kvProducerRecord = new ProducerRecord("leadnews-topic", "hello");
+//        //异步消息发送
+//        producer.send(kvProducerRecord, new Callback() {
+//            @Override
+//            public void onCompletion(RecordMetadata recordMetadata, Exception e) {
+//                if(e != null){
+//                    System.out.println("记录异常信息到日志表中");
+//                }
+//                System.out.println(recordMetadata.offset());
+//            }
+//        });
 
-        //3.发送消息
-        producer.send(record);
-
-        ProducerRecord kvProducerRecord = new ProducerRecord("leadnews-topic", "hello");
-        //异步消息发送
-        producer.send(kvProducerRecord, new Callback() {
-            @Override
-            public void onCompletion(RecordMetadata recordMetadata, Exception e) {
-                if(e != null){
-                    System.out.println("记录异常信息到日志表中");
-                }
-                System.out.println(recordMetadata.offset());
-            }
-        });
+        for (int i = 0; i < 5; i++) {
+            ProducerRecord<String, String> producerRecord = new ProducerRecord<String, String>("itcast-topic-input", "hello kafka");
+            producer.send(producerRecord);
+        }
 
         //4.关闭消息通道，必须关闭，否则消息发送不成功
         producer.close();
